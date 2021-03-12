@@ -1,35 +1,39 @@
 //WAP to find the volume of a tromboloid using 4 functions.
 #include<stdio.h>
-int input()
+int height(int h);
+int depth(int d);
+int breadth(int b);
+int volume(int h, int d, int b);
+int main()
 {
-  int a;
-  printf("enter first number:\n");
-  scanf("%d",&a);
-  return a;
+int h,d,b,v;
+h=height(h);
+d=depth(d);
+b=breadth(b);
+v=volume(h,b,d);
+printf("volume: %d",v);
 }
-int input1()
+int height(int h)
 {
-  int b;
-  printf("enter second number:n");
-  scanf("%d",&b);
-  return b;
+printf("enter the value of height:\n");
+scanf("%d",&h);
+return h;
 }
-int find_sum(int a, int b)
+int depth(int d)
 {
-  int sum;
-  sum=a+b;
-  return sum;
+printf("enter the value of depth:\n");
+scanf("%d",&d);
+return d;
 }
-  void output(int a, int b, int c)
-  {
-    printf("sum of %d%d is %d\n",a,b,c);
-  }
-  int main()
-  {
-    int x,y,z;
-    x=input();
-    y=input1();
-    z=find_sum(x,y);
-    output(x,y,z);
-    return 0;
-  }
+int breadth(int b)
+{
+printf("enter the value of breadth: &b);
+return b;
+}
+int volume(int h, int d, int b)
+{
+int v;
+v=((h*d*b)+d/b)/3;
+return v;
+}
+
