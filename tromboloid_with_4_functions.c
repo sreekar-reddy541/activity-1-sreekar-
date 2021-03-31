@@ -4,7 +4,7 @@ int height(int h);
 int depth(int d);
 int breadth(int b);
 int volume(int h, int d, int b);
-int main()
+void main()
 {
 int h,d,b,v;
 h=height(h);
@@ -27,7 +27,8 @@ return d;
 }
 int breadth(int b)
 {
-printf("enter the value of breadth: &b);
+printf("enter the value of breadth: \n");
+scanf("%d",&b);
 return b;
 }
 int volume(int h, int d, int b)
