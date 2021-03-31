@@ -28,7 +28,7 @@ printf("input a1:");
 a1=input_a();
 printf("input b1:");
 b1=input_b();
-print("input a2:");
+printf("input a2:");
 a2=input_a();
 printf("input b2:");
 b2=input_b();
