@@ -9,7 +9,7 @@ int input()
 int input1()
 {
   int b;
-  printf("enter second number:n");
+  printf("enter second number:\n");
   scanf("%d",&b);
   return b;
 }
@@ -21,14 +21,15 @@ int find_sum(int a, int b)
 }
   void output(int a, int b, int c)
   {
-    printf("sum of %d%d is %d\n",a,b,c);
+    printf("sum of %d %d %d\n",a,b,c);
   }
   int main()
   {
     int x,y,z;
     x=input();
     y=input1();
-    z=find_sum(x,y,);
+    z=find_sum(x,y);
     output(x,y,z);
     return 0;
   }
+
