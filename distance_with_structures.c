@@ -5,7 +5,7 @@ struct coordinate
 {
 float x;
 float y;
-}
+};
 typedef struct coordinate point;
 point read_coordinate()
 {
@@ -25,8 +25,6 @@ return d;
 void output(float dist)
 {
 printf("distance=%f",dist);
-{
-printf("distance=%f",dist);
 }
 int main()
 {
@@ -38,3 +36,4 @@ dist=find_distance(c1,c2);
 output(dist);
 return 0;
 }
+
